@@ -1,0 +1,13 @@
+Package: yeastCorrelationFinder
+Title: Find common transcription factors in yeast expression data
+Description: Allocco (2004) observes that "In S. cerevisiae, two genes
+	have a 50% chance of having a common transcription factor binder if the
+	correlation between their expression profiles is equal to 0.84."
+	This package identifies such genes.
+Version: 0.99.0
+Author: Dan Tenenbaum
+Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
+biocViews: Software
+Depends: R (>= 2.15.0)
+Suggests: RUnit, BiocGenerics
+License: Artistic-2.0
