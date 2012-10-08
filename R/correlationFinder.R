@@ -21,18 +21,6 @@ correlationFinder <- function(dataFile = system.file("extdata",
     "sub_combined_complete_dataset_526G_198E.txt", 
     package="yeastCorrelationFinder"))
 {
-  list.to.string = function (list.of.items, sep = " ")
-  {
-      s = list.of.items[1]
-      if (length(list.of.items) == 1)
-          return(trim(s))
-      for (item in list.of.items[2:length(list.of.items)])
-        s = paste(s, item, sep = sep)
-      return(trim(s))
-  }
-  
-  printf <- function(msg, ...) print(noquote(sprintf(msg, ...)))
-
   tbl <- read.table (dataFile, sep='\t', header=T, quote='',
     comment.char='', fill=T, stringsAsFactors=FALSE)
   rownames (tbl) <- tbl$X
