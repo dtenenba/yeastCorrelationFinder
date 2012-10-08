@@ -1,0 +1,2 @@
+export(correlationFinder)
+importFrom(gdata,trim)
