@@ -5,13 +5,13 @@ Description: Allocco (2004) observes that "In S. cerevisiae, two genes
     correlation between their expression profiles is equal to 0.84."
     This package identifies such genes.
 Version: 0.99.0
-Author: Dan Tenenbaum 
+Author: Dan Tenenbaum
 Maintainer: Bioconductor Package Maintainer <maintainer@bioconductor.org>
 biocViews: Software
 Imports:
     gdata
 Depends:
-    R (>= 2.15.0), org.Sc.sgd.db
+    R (>= 2.15.0)
 Suggests:
     RUnit,
     BiocGenerics
