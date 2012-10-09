@@ -11,7 +11,7 @@ biocViews: Software
 Imports:
     gdata
 Depends:
-    R (>= 2.15.0)
+    R (>= 2.15.0), org.Sc.sgd.db
 Suggests:
     RUnit,
     BiocGenerics
