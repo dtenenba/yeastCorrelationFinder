@@ -1,0 +1,79 @@
+%\VignetteIndexEntry{Find common transcription factors}
+%\VignettePackage{yeastCorrelationFinder}
+
+\documentclass{article}
+\usepackage{Sweave,fullpage}
+\usepackage{url}
+
+
+\newcommand{\Rfunction}[1]{{\texttt{#1}}}
+\newcommand{\Robject}[1]{{\texttt{#1}}}
+\newcommand{\Rpackage}[1]{{\textit{#1}}}
+\newcommand{\Rmethod}[1]{{\texttt{#1}}}
+\newcommand{\Rfunarg}[1]{{\texttt{#1}}}
+\newcommand{\Rclass}[1]{{\textit{#1}}}
+\newcommand{\Rcode}[1]{{\texttt{#1}}}
+
+\newcommand{\software}[1]{\textsf{#1}}
+\newcommand{\R}{\software{R}}
+\newcommand{\yeastCorrelationFinder}{\Rpackage{yeastCorrelationFinder}}
+\newcommand{\galaxy}{\Rcode{galaxy}}
+
+\title{Find Common Transcription Factors}
+\author{Dan Tenenbaum, Paul Shannon}
+
+\begin{document}
+\maketitle
+
+
+\tableofcontents
+
+\section{Introduction}
+
+
+\newenvironment{myindentpar}[1]%
+ {\begin{list}{}%
+         {\setlength{\leftmargin}{#1}}%
+         \item[]%
+ }
+ {\end{list}}
+
+
+Allocco\cite{Allocco} says:
+
+
+\begin{myindentpar}{3cm}
+In \emph{S. cerevisiae}, two genes have a 50\% chance of
+having a common transcription factor binder if the correlation between
+their expression profiles is equal to 0.84. 
+\end{myindentpar}
+
+Putting this into action, this package contains a function that
+reads in yeast expression data and returns a list containing 
+genes and their possible transcription factor binders.
+
+You can run the function as follows:
+
+<<correlationFinder>>=
+library(yeastCorrelationFinder)
+tbl <- correlationFinder()
+head(tbl)
+@
+
+This is just meant to illustrate the path from an ad hoc script to a package.
+The package doesn't do much, but now that it has moved from a script to a 
+package, it will be easier to add more functionality. At this point one 
+might want to plot the expression data:
+
+\includegraphics{plot.pdf}
+
+...or create a network from it and zoom in to subnetworks of interest:
+
+\includegraphics{tfnetwork.png}
+
+
+\bibliographystyle{apalike}
+\bibliography{References}
+
+\end{document}
+
