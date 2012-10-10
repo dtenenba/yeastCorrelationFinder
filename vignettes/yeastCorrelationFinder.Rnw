@@ -39,7 +39,7 @@
  {\end{list}}
 
 
-\cite{Allocco} says:
+Allocco (2004) says:
 
 
 \begin{myindentpar}{3cm}
@@ -71,8 +71,16 @@ might want to plot the expression data:
 
 \includegraphics{tfnetwork.png}
 
+\section{References}
 
-\bibliography{References}
+
+\begin{itemize}
+
+\item Allocco, DJ  Kohane IS, Butte AJ. Quantifying the relationship between co-expression, co-regulation and gene function,
+\emph {BMC Bioinformatics} 2004, 5:18.
+
+\end{itemize}
+
 
 \end{document}
 
