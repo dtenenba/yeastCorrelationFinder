@@ -72,7 +72,6 @@ might want to plot the expression data:
 \includegraphics{tfnetwork.png}
 
 
-\bibliographystyle{abbr}
 \bibliography{References}
 
 \end{document}
