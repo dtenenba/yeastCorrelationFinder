@@ -39,7 +39,7 @@
  {\end{list}}
 
 
-Allocco\cite{Allocco} says:
+\cite{Allocco} says:
 
 
 \begin{myindentpar}{3cm}
@@ -72,7 +72,7 @@ might want to plot the expression data:
 \includegraphics{tfnetwork.png}
 
 
-\bibliographystyle{apalike}
+\bibliographystyle{abbr}
 \bibliography{References}
 
 \end{document}
