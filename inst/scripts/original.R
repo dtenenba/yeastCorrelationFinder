@@ -1,5 +1,5 @@
 ## This is the original ad hoc script.
-list.to.string = function (list.of.items, sep = " ")
+list.to.string = function(list.of.items, sep = " ")
 {
     s = list.of.items[1]
     if (length(list.of.items) == 1)
@@ -15,7 +15,7 @@ f <- "sub_combined_complete_dataset_526G_198E.txt"
 tbl <- read.table (f, sep='\t', header=T, quote='', comment.char='', fill=T, stringsAsFactors=FALSE)
 rownames (tbl) <- tbl$X
 exclude.these.columns <- 
-which (sapply (1:ncol (tbl), function (col) class (tbl [,col])) != 'numeric')
+which (sapply (1:ncol (tbl), function(col) class (tbl [,col])) != 'numeric')
 if (length (exclude.these.columns) > 0)
   tbl <- tbl [, -exclude.these.columns]
 mtx.cor  <- cor (t (as.matrix (tbl)), use='pairwise.complete.obs')

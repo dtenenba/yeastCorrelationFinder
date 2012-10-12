@@ -26,7 +26,7 @@ correlationFinder <- function(dataFile = system.file("extdata",
   rownames (tbl) <- tbl$X
   exclude.these.columns <- 
   which (sapply (1:ncol (tbl),
-    function (col) class (tbl [,col])) != 'numeric')
+    function(col) class (tbl [,col])) != 'numeric')
   if (length (exclude.these.columns) > 0)
     tbl <- tbl [, -exclude.these.columns]
   mtx.cor  <- cor (t (as.matrix (tbl)), use='pairwise.complete.obs')
